@@ -1,0 +1,306 @@
+/* Style reset */
+html, body, header, h1, h2, p, form, section, img, fieldset, label, footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+
+html, body, .main, .header, .imgSection, .questionFieldSet, .footer {
+	display: flex;
+  flex-direction: column;
+}
+
+html, .imgSection {
+  justify-content: center;
+  align-items: center;
+}
+
+.header, .imgSection, .questionForm, .questionFieldSet, .submitForm, .footer {
+  margin: 5px 0 5px 0;
+}
+
+.main, .submitButton {
+  color: white;
+}
+
+.landingPageH1, .landingPageH2 {
+  margin-bottom: 20px;
+}
+
+.landingPageH2, .correctAnswerH1, .incorrectAnswerH1, .incorrectAnswerP, .finalPageH1, .finalPageP {
+  font-size: 120%;
+}
+
+.quizImg, .option, .quizImgAnswerPage {
+  border: 1px solid black;
+}
+
+.quizImg, .option, .submitButton {
+  border-radius: 4px;
+}
+
+.finalPageH1, .finalPageH2, .finalPageP {
+  margin-bottom: 30px;
+}
+
+.submitButton, .questionCountP, .currentScoreP {
+  font-size: 70%;
+}
+
+.submitButton, .option:hover {
+  cursor: pointer;
+}
+
+.incorrectAnswerH1, .incorrectAnswerH2 {
+  margin-bottom: 15px;
+}
+
+.incorrectAnswerH2, .finalPageH2 {
+  font-size: 90%;
+}
+
+html {
+  min-height: 100vh;
+  background: black url('https://images.fineartamerica.com/images-medium-large-5/red-saguaro-sunset-saija-lehtonen.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.main {
+  margin: 30px;
+  padding: 10px 15px 10px 15px;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  border: 1px solid white;
+  font-weight: bold;
+  font-family: Georgia, Palatino, Helvetica;
+}
+
+.landingPageH1 {
+  font-size: 225%;
+}
+
+.submitForm {
+  margin-top: 10px;
+}
+
+.submitButton {
+  border-color: grey;
+  padding: 5px 5px;
+  background-color: #65401a;
+}
+
+.questionH1 {
+  font-size: 100%;
+}
+
+.questionFieldSet {
+  border: none;
+}
+
+.quizImg {
+  height: 100px;
+  width: auto;
+}
+
+.option {
+  text-align: left;
+  padding: 0 8px 2px 8px;
+  background: lightgrey;
+  color: black;
+  margin: 0 0 -10px 0;
+  font-size: 75%;
+}
+
+.option:hover {
+  background: peru;
+}
+
+.quizImgAnswerPage {
+  height: auto;
+  width: 60%;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 375px) {
+  
+  /* Previous: 5px 0 5px 0 */
+  .header, .imgSection, .questionForm, .questionFieldSet, .submitForm, .footer {
+    margin: 8px 0 8px 0;
+  }
+  
+  /* Previous: 225% */
+  .landingPageH1 {
+    font-size: 260%;
+  }
+  /* Previous: 120% */
+  .landingPageH2, .correctAnswerH1, .incorrectAnswerH1, .incorrectAnswerP, .finalPageH1, .finalPageP {
+    font-size: 145%;
+  }
+
+  /* Previous: 100% */
+  .questionH1 {
+    font-size: 135%;
+  }
+  
+  /* Previous: 75% */
+  .option {
+    font-size: 90%;
+  }
+  /* Previous: 70% */
+  .submitButton, .questionCountP, .currentScoreP {
+    font-size: 90%;
+  }
+
+  /* Previous: 90% */
+  .incorrectAnswerH2, .finalPageH2 {
+    font-size: 115%;
+  }
+
+  /* Previous: 100px */
+  .quizImg {
+  height: 135px;
+  }
+
+  /* Previous: 60% */
+  .quizImgAnswerPage {
+  width: 60%;
+  border-radius: 8px;
+  }
+
+  /* Previous: 4px */
+  .quizImg, .option, .submitButton {
+    border-radius: 6px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  /* Previous: 8px 0 8px 0 */
+  .header, .imgSection, .questionForm, .questionFieldSet, .submitForm, .footer {
+    margin: 15px 0 15px;
+  }
+  
+  /* Previous: 260% */
+  .landingPageH1 {
+    font-size: 450%;
+  }
+
+  /* Previous: none */
+  .landingPageP {
+    font-size: 200%;
+  }
+  /* Previous: 145% */
+  .correctAnswerH1, .incorrectAnswerH1, .incorrectAnswerP, .finalPageH1, .finalPageP {
+    font-size: 220%;
+  }
+
+  /* Previous: 145% */
+  .landingPageH2 {
+    font-size: 260%;
+  }
+
+  /* Previous: 135% */
+  .questionH1 {
+    font-size: 260%;
+  }
+  
+  /* Previous: 90% */
+  .option {
+    font-size: 180%;
+  }
+
+  /* Previous: 90% */
+  .submitButton, .questionCountP, .currentScoreP {
+    font-size: 180%;
+  }
+
+  /* Previous: 115% */
+  .incorrectAnswerH2, .finalPageH2 {
+    font-size: 130%;
+  }
+
+  /* Previous: 135px */
+  .quizImg {
+  height: 200px;
+  }
+
+  /* Previous: 60%, 8px */
+  .quizImgAnswerPage {
+  width: 40%;
+  border-radius: 12px;
+  }
+
+  /* Previous: 6px */
+  .quizImg, .option, .submitButton {
+    border-radius: 8px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  /* Previous: 15px 0 15px 0 */
+  .header, .imgSection, .questionForm, .questionFieldSet, .submitForm, .footer {
+    margin: 10px 0 10px;
+  }
+  
+  /* Previous: 40%, 12px */
+  .quizImgAnswerPage {
+  width: 25%;
+  border-radius: 16px;
+  }
+
+  /* Previous: 260% */
+  .questionH1 {
+    font-size: 200%;
+  }
+
+}
+
+/* Master list of classes and id's
+.main
+.header
+.landingPageH1
+.landingPageH2
+.landingPageP
+.submitForm
+.submitButton
+.imgSection
+.questionH1
+.quizImg
+.questionForm
+.questionFieldSet
+.option
+.footer
+.questionCountP
+.currentScoreP
+.correctAnswerH1
+.quizImgAnswerPage
+.incorrectAnswerH1
+.incorrectAnswerH2
+.incorrectAnswerP
+.finalPageH1
+.finalPageH2
+.finalPageP
+#jsMain
+#jsStartQuiz
+#jsResizeQuestion
+#jsOptionBox
+.jsResizeOption
+#jsSubmitForm
+#jsNextQuestion
+#jsRestartQuiz
+*/
+/*
+.header
+.submitForm
+.imgSection
+.questionForm
+.questionFieldSet
+.footer
+*/
