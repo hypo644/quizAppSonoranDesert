@@ -196,20 +196,10 @@ const ANSWERS = [
     $('#jsResizeQuestion').each(function() {
       let questionLength = $('#jsResizeQuestion').text().length;
       let fontSize = questionFontSize();
-      //let fontSize = $('.questionH1').css('font-size');
       console.log('Variable questionLength: ' + questionLength);
-      //console.log('Variable fontSize: ' + fontSize)
       if (questionLength > 65) {
         $('#jsResizeQuestion').css('font-size', `${fontSize}`);
         console.log(`Font size changed to: ${fontSize}`);
-        // if ($('.questionH1').css('font-size') === '20px') {
-        //   $('#jsResizeQuestion').css('font-size', '70%');
-        //   console.log('Changed to 70%');
-        // };
-        // if ($('.questionH1').css('font-size') === '27px') {
-        //   $('#jsResizeQuestion').css('font-size', '100%');
-        //   console.log('Changed to 100%');
-        // };
       };
     });
   };
@@ -232,7 +222,6 @@ const ANSWERS = [
     $('#jsStartQuiz').submit(function(event) {
       console.log(`User clicked 'Start Quiz!'`);
       $('#jsMain').html(questionPage(STORE));
-      //questionFontSize();
       handleQuestionSize();
       handleOptionSize();
       return false;
@@ -394,7 +383,6 @@ const ANSWERS = [
       } else {
         $('#jsMain').html(quizEndPage());
       };
-      //questionFontSize();
       handleQuestionSize();
       handleOptionSize();
       return false;
